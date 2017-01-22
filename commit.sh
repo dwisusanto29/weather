@@ -1,3 +1,4 @@
+cd /home/pi/DataArduino/weather/
 if [ -z "`git branch | grep builds`" ]; then
   git co -b builds
 else
