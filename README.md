@@ -1,2 +1,2 @@
 # weather
-Belajar
+Data Hasil pengamatan
