@@ -1,2 +1,0 @@
-# weather
-Data Hasil pengamatan
