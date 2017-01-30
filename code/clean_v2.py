@@ -5,7 +5,7 @@ from datetime import datetime
 
 from datetime import datetime, timedelta
 
-d = datetime.today() - timedelta(days=1)
+d = datetime.today()
 name = d.strftime("%Y%m%d")
 
 filename = "/home/pi/DataArduino/data/data"+name+".csv"
