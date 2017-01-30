@@ -7,7 +7,7 @@ d = datetime.today() - timedelta(days=1)
 name = d.strftime("%Y%m%d")
 
 #filename = "/home/pi/DataArduino/data/data"+name+".csv"
-filename = "/home/pi/DataArduino/weather/a"+name+".csv"
+filename = "/home/pi/DataArduino/weather/data/a"+name+".csv"
 #filename = sys.argv[1]
 #fileout = filename[3:]
 dateparse = lambda dates: pd.datetime.strptime(dates,'%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d %H:%M:%S')
