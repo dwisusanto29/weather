@@ -14,5 +14,3 @@ satu = data[data.humidity > 0]
 baru = satu.dropna(axis=0)
 dataku = baru.drop_duplicates(['waktu'])
 dataku.to_csv(fileout, sep=',', encoding='utf-8', index=False, header=False)
-
-
