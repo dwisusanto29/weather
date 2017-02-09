@@ -15,7 +15,8 @@ data = pd.read_csv(filename, sep=",",  skiprows=1, names=['waktu', 'tanggal', 'w
 
 satu = data[data.tanggal < '0000-00-00']
 dua = satu[satu.humidity > 0]
-baru = dua.dropna(axis=0)
+tiga = dua[dua.humidity < 100]
+baru = tiga.dropna(axis=0)
 dataku = baru.drop_duplicates(['waktu'])
 dataku.to_csv(fileout, sep=',', encoding='utf-8', index=False, header=False)
 
