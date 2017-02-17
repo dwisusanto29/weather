@@ -14,6 +14,7 @@ data = pd.read_csv(filename, sep=",",  skiprows=1, names=['waktu','tanggal', 'de
 data['lokasi']='4'
 dataku = data.resample('1Min').mean()
 baru = dataku.dropna()
+tgl = data.tanggal.ix[0]
 engine = create_engine('mysql+pymysql://alvin:alvin@202.124.205.201:3306/db_dws_baru', echo=False)
 conn = engine.connect()
 sql = "SELECT * FROM tb_pengamatan where tanggal="+sekarang+";";
